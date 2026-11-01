@@ -51,4 +51,4 @@ None. If you've never written Python, it helps to spend an hour on the basics of
 
 ## Next
 
-Module 2: Data Structures (coming soon)
+[Module 2: Data Structures](../02-data-structures)

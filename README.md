@@ -26,7 +26,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | #  | Module | Topics | Status |
 |----|--------|--------|--------|
 | 01 | [Python Foundations](01-python-foundations) | Types, floats, strings, control flow, functions, comprehensions, errors | Available |
-| 02 | Data Structures | Lists, tuples, dicts, sets, and how fast each one really is | Planned |
+| 02 | [Data Structures](02-data-structures) | Lists, tuples, dicts, sets, `collections`, `heapq`, and how fast each one really is | Available |
 | 03 | OOP for ML | Classes, dunder methods, dataclasses, inheritance, PyTorch-style patterns | Planned |
 | 04 | Pythonic Tools | Iterators, generators, decorators, context managers, type hints | Planned |
 | 05 | Files and Data | pathlib, CSV, JSON, reading messy real-world data | Planned |
@@ -37,14 +37,12 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | 10 | Engineering Practices | Virtual environments, testing, logging, project layout, profiling | Planned |
 | 11 | Capstone | End-to-end pipeline: raw data, trained model, simple API | Planned |
 
-## Module 1 notebooks
+## Notebooks
 
-| Notebook | Open |
-|----------|------|
-| Lesson | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/01-python-foundations/01_lesson.ipynb) |
-| Exercises | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/01-python-foundations/02_exercises.ipynb) |
-| Solutions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/01-python-foundations/03_solutions.ipynb) |
-| Mini project: k-NN classifier from scratch | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/01-python-foundations/04_mini_project.ipynb) |
+| Module | Lesson | Exercises | Solutions | Mini project |
+|--------|--------|-----------|-----------|--------------|
+| [01 Python Foundations](01-python-foundations) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/01-python-foundations/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/01-python-foundations/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/01-python-foundations/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/01-python-foundations/04_mini_project.ipynb) k-NN classifier |
+| [02 Data Structures](02-data-structures) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/02-data-structures/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/02-data-structures/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/02-data-structures/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/02-data-structures/04_mini_project.ipynb) Naive Bayes spam filter |
 
 ## How to use this repo
 
@@ -82,6 +80,8 @@ python-for-ai-ml/
 │   ├── 03_solutions.ipynb
 │   ├── 04_mini_project.ipynb
 │   └── cheatsheet.md
+├── 02-data-structures/
+│   └── (same layout)
 ├── ...more modules as they're added
 ├── requirements.txt
 └── LICENSE
