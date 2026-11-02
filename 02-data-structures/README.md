@@ -49,4 +49,4 @@ A spam filter using Naive Bayes, written with nothing but `Counter`, `defaultdic
 
 ## Next
 
-Module 3: OOP for ML (coming soon)
+[Module 3: OOP for ML](../03-oop-for-ml)
