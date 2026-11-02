@@ -55,4 +55,4 @@ A `Value` class that records every calculation through operator overloading, and
 
 ## Next
 
-Module 4: Pythonic Tools (coming soon)
+[Module 4: Pythonic Tools](../04-pythonic-tools)
