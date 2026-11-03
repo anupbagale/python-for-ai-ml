@@ -55,4 +55,4 @@ Modules [1](../01-python-foundations) to [4](../04-pythonic-tools)
 
 ## Next
 
-Module 6: NumPy (coming soon)
+[Module 6: NumPy](../06-numpy)
