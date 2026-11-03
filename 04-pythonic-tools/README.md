@@ -53,4 +53,4 @@ Modules [1](../01-python-foundations), [2](../02-data-structures) and [3](../03-
 
 ## Next
 
-Module 5: Files and Data (coming soon)
+[Module 5: Files and Data](../05-files-and-data)

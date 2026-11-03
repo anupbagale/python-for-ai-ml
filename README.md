@@ -29,7 +29,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | 02 | [Data Structures](02-data-structures) | Lists, tuples, dicts, sets, `collections`, `heapq`, and how fast each one really is | Available |
 | 03 | [OOP for ML](03-oop-for-ml) | Classes, dunder methods, properties, inheritance, dataclasses, PyTorch-style `Dataset`, `DataLoader` and autograd | Available |
 | 04 | [Pythonic Tools](04-pythonic-tools) | Iterators, generators, `itertools`, decorators, context managers, type hints | Available |
-| 05 | Files and Data | pathlib, CSV, JSON, reading messy real-world data | Planned |
+| 05 | [Files and Data](05-files-and-data) | pathlib, encodings, CSV, JSON, cleaning messy data, saving models, with real penguin data | Available |
 | 06 | NumPy | Arrays, broadcasting, vectorization, linear algebra | Planned |
 | 07 | pandas | Cleaning, groupby, merging, feature engineering | Planned |
 | 08 | Visualization | Matplotlib and Seaborn for exploring data and models | Planned |
@@ -45,6 +45,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [02 Data Structures](02-data-structures) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/02-data-structures/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/02-data-structures/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/02-data-structures/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/02-data-structures/04_mini_project.ipynb) Naive Bayes spam filter |
 | [03 OOP for ML](03-oop-for-ml) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/03-oop-for-ml/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/03-oop-for-ml/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/03-oop-for-ml/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/03-oop-for-ml/04_mini_project.ipynb) Autograd engine + neural net |
 | [04 Pythonic Tools](04-pythonic-tools) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/04-pythonic-tools/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/04-pythonic-tools/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/04-pythonic-tools/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/04-pythonic-tools/04_mini_project.ipynb) Hyperparameter search |
+| [05 Files and Data](05-files-and-data) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/05-files-and-data/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/05-files-and-data/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/05-files-and-data/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/05-files-and-data/04_mini_project.ipynb) Penguin classifier, saved as JSON |
 
 ## How to use this repo
 
@@ -88,6 +89,9 @@ python-for-ai-ml/
 │   └── (same layout)
 ├── 04-pythonic-tools/
 │   └── (same layout)
+├── 05-files-and-data/
+│   ├── (same layout)
+│   └── data/penguins.csv
 ├── ...more modules as they're added
 ├── requirements.txt
 └── LICENSE
