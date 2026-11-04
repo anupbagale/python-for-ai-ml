@@ -55,4 +55,4 @@ Modules [1](../01-python-foundations) to [5](../05-files-and-data). The mini pro
 
 ## Next
 
-Module 7: pandas (coming soon)
+[Module 7: pandas](../07-pandas)

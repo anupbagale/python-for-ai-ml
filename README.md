@@ -31,7 +31,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | 04 | [Pythonic Tools](04-pythonic-tools) | Iterators, generators, `itertools`, decorators, context managers, type hints | Available |
 | 05 | [Files and Data](05-files-and-data) | pathlib, encodings, CSV, JSON, cleaning messy data, saving models, with real penguin data | Available |
 | 06 | [NumPy](06-numpy) | Arrays, views, broadcasting, vectorization, linear algebra, a neural network from scratch | Available |
-| 07 | pandas | Cleaning, groupby, merging, feature engineering | Planned |
+| 07 | [pandas](07-pandas) | Reading, cleaning, groupby, merging, encoding, time-based features and leakage | Available |
 | 08 | Visualization | Matplotlib and Seaborn for exploring data and models | Planned |
 | 09 | Math in Code | Gradients, probability and statistics implemented by hand | Planned |
 | 10 | Engineering Practices | Virtual environments, testing, logging, project layout, profiling | Planned |
@@ -47,6 +47,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [04 Pythonic Tools](04-pythonic-tools) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/04-pythonic-tools/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/04-pythonic-tools/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/04-pythonic-tools/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/04-pythonic-tools/04_mini_project.ipynb) Hyperparameter search |
 | [05 Files and Data](05-files-and-data) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/05-files-and-data/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/05-files-and-data/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/05-files-and-data/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/05-files-and-data/04_mini_project.ipynb) Penguin classifier, saved as JSON |
 | [06 NumPy](06-numpy) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/06-numpy/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/06-numpy/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/06-numpy/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/06-numpy/04_mini_project.ipynb) Digit-reading neural network |
+| [07 pandas](07-pandas) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/07-pandas/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/07-pandas/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/07-pandas/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/07-pandas/04_mini_project.ipynb) Customer churn from raw tables |
 
 ## How to use this repo
 
@@ -94,6 +95,8 @@ python-for-ai-ml/
 │   ├── (same layout)
 │   └── data/penguins.csv
 ├── 06-numpy/
+│   └── (same layout)
+├── 07-pandas/
 │   └── (same layout)
 ├── ...more modules as they're added
 ├── requirements.txt
