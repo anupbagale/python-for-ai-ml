@@ -59,4 +59,4 @@ Modules [1](../01-python-foundations) to [6](../06-numpy), especially [Module 5]
 
 ## Next
 
-Module 8: Visualization (coming soon)
+[Module 8: Visualization](../08-visualization)
