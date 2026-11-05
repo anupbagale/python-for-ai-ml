@@ -68,4 +68,4 @@ Modules [1](../01-python-foundations) to [7](../07-pandas)
 
 ## Next
 
-Module 9: Math in Code (coming soon)
+[Module 9: Math in Code](../09-math-in-code)
