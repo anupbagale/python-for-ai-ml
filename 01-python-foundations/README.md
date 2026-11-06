@@ -47,7 +47,7 @@ Classify fruit as apple, orange or lemon from weight and sweetness using k-NN, w
 
 ## Prerequisites
 
-None. If you've never written Python, it helps to spend an hour on the basics of running code first, but the lesson starts from the beginning.
+None. If AI and machine learning are new to you, read [Start Here](../00-start-here) first. If you've never written Python, it helps to spend an hour on the basics of running code first, but the lesson starts from the beginning.
 
 ## Next
 

@@ -1,6 +1,6 @@
 # Module 11: Capstone
 
-The last module puts the whole course together. It starts from the original, raw field records of the Palmer Station penguin study and ends with a tested web service that predicts a penguin's sex from four measurements, and says "unsure" when it should.
+The last module of Part 1 puts everything so far together. It starts from the original, raw field records of the Palmer Station penguin study and ends with a tested web service that predicts a penguin's sex from four measurements, and says "unsure" when it should.
 
 The lesson introduces the last tools needed: scikit-learn, pipelines, cross-validation, honest tuning, saving models, and serving them with FastAPI.
 
@@ -69,6 +69,6 @@ The results, as they came out:
 
 All of Modules [1](../01-python-foundations) to [10](../10-engineering-practices).
 
-## That's the course
+## That's Part 1
 
-Thanks for working through it. The same steps (look at the data carefully, decide what the tool can know, evaluate honestly, package it with everything it needs, and keep checking it) apply to any problem you take on next.
+The same steps (look at the data carefully, decide what the tool can know, evaluate honestly, package it with everything it needs, and keep checking it) apply to any problem you take on next. Part 2 of the [roadmap](../README.md#roadmap) goes deeper into machine learning itself, and Part 3 into deep learning and modern AI.
