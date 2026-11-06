@@ -9,7 +9,7 @@ Each module has four parts:
 - **Lesson**: concepts explained step by step, with runnable code
 - **Exercises**: problems with built-in checks, so you know right away if your answer is correct
 - **Solutions**: worked answers with notes on why they're written that way
-- **Mini project**: a small build that uses everything from the module
+- **Mini project**: a small build that uses everything from the module (in Module 11, the capstone project)
 
 Everything runs in Google Colab. Click the badge next to any notebook and it opens in your browser, with nothing to install.
 
@@ -35,7 +35,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | 08 | [Visualization](08-visualization) | Matplotlib, Seaborn, choosing charts, honest colour and axes, model diagnostic plots | Available |
 | 09 | [Math in Code](09-math-in-code) | Floating point, vectors, gradients, the chain rule, gradient descent, probability and statistics, by hand and checked | Available |
 | 10 | [Engineering Practices](10-engineering-practices) | Project layout, environments, pytest, logging, configs, CLIs, reproducibility, profiling | Available |
-| 11 | Capstone | End-to-end pipeline: raw data, trained model, simple API | Planned |
+| 11 | [Capstone](11-capstone) | scikit-learn pipelines, honest evaluation, and a tested FastAPI service, built from raw field data | Available |
 
 ## Notebooks
 
@@ -51,6 +51,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [08 Visualization](08-visualization) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/08-visualization/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/08-visualization/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/08-visualization/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/08-visualization/04_mini_project.ipynb) Visual model report |
 | [09 Math in Code](09-math-in-code) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/04_mini_project.ipynb) Logistic regression by hand |
 | [10 Engineering Practices](10-engineering-practices) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/04_mini_project.ipynb) From notebook to project |
+| [11 Capstone](11-capstone) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/04_capstone.ipynb) Penguin sexing service, raw data to API |
 
 ## How to use this repo
 
@@ -107,10 +108,16 @@ python-for-ai-ml/
 │   └── (same layout)
 ├── 10-engineering-practices/
 │   └── (same layout)
-├── ...more modules as they're added
+├── 11-capstone/
+│   ├── (same layout, with 04_capstone.ipynb)
+│   └── data/penguins_raw.csv
 ├── requirements.txt
 └── LICENSE
 ```
+
+## Data
+
+The penguin data used throughout the course comes from the Palmer Station Long Term Ecological Research Program, collected by Dr. Kristen Gorman, and packaged as [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/) by Allison Horst, Alison Hill and Kristen Gorman. It's public domain (CC0). Details and citations are in [05-files-and-data/data](05-files-and-data/data/README.md) and [11-capstone/data](11-capstone/data/README.md).
 
 ## License
 

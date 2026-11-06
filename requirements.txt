@@ -1,4 +1,5 @@
-# Only needed if you run the notebooks locally. Colab already has all of these.
+# Only needed if you run the notebooks locally. Colab already has most of these,
+# and the Module 11 notebooks install FastAPI, httpx and uvicorn themselves if they're missing.
 # Module 1 uses pure Python, so it only needs Jupyter.
 jupyter
 numpy
@@ -6,3 +7,7 @@ pandas
 matplotlib
 seaborn
 scikit-learn
+pytest
+fastapi
+httpx
+uvicorn

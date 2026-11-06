@@ -66,4 +66,4 @@ Modules [1](../01-python-foundations) to [9](../09-math-in-code). Modules 3 (cla
 
 ## Next
 
-Module 11: Capstone (coming soon)
+[Module 11: Capstone](../11-capstone)
