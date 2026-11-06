@@ -34,7 +34,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | 07 | [pandas](07-pandas) | Reading, cleaning, groupby, merging, encoding, time-based features and leakage | Available |
 | 08 | [Visualization](08-visualization) | Matplotlib, Seaborn, choosing charts, honest colour and axes, model diagnostic plots | Available |
 | 09 | [Math in Code](09-math-in-code) | Floating point, vectors, gradients, the chain rule, gradient descent, probability and statistics, by hand and checked | Available |
-| 10 | Engineering Practices | Virtual environments, testing, logging, project layout, profiling | Planned |
+| 10 | [Engineering Practices](10-engineering-practices) | Project layout, environments, pytest, logging, configs, CLIs, reproducibility, profiling | Available |
 | 11 | Capstone | End-to-end pipeline: raw data, trained model, simple API | Planned |
 
 ## Notebooks
@@ -50,6 +50,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [07 pandas](07-pandas) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/07-pandas/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/07-pandas/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/07-pandas/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/07-pandas/04_mini_project.ipynb) Customer churn from raw tables |
 | [08 Visualization](08-visualization) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/08-visualization/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/08-visualization/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/08-visualization/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/08-visualization/04_mini_project.ipynb) Visual model report |
 | [09 Math in Code](09-math-in-code) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/04_mini_project.ipynb) Logistic regression by hand |
+| [10 Engineering Practices](10-engineering-practices) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/04_mini_project.ipynb) From notebook to project |
 
 ## How to use this repo
 
@@ -103,6 +104,8 @@ python-for-ai-ml/
 ├── 08-visualization/
 │   └── (same layout)
 ├── 09-math-in-code/
+│   └── (same layout)
+├── 10-engineering-practices/
 │   └── (same layout)
 ├── ...more modules as they're added
 ├── requirements.txt

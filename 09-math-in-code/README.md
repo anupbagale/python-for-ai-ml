@@ -69,4 +69,4 @@ Modules [1](../01-python-foundations) to [8](../08-visualization). Module 6 (Num
 
 ## Next
 
-Module 10: Engineering Practices (coming soon)
+[Module 10: Engineering Practices](../10-engineering-practices)
