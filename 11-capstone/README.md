@@ -71,4 +71,4 @@ All of Modules [1](../01-python-foundations) to [10](../10-engineering-practices
 
 ## That's Part 1
 
-The same steps (look at the data carefully, decide what the tool can know, evaluate honestly, package it with everything it needs, and keep checking it) apply to any problem you take on next. Part 2 of the [roadmap](../README.md#roadmap) goes deeper into machine learning itself, and Part 3 into deep learning and modern AI.
+The same steps (look at the data carefully, decide what the tool can know, evaluate honestly, package it with everything it needs, and keep checking it) apply to any problem you take on next. Part 2 goes deeper into machine learning itself, starting with [Module 12: Supervised Learning in Depth](../12-supervised-learning), and Part 3 into deep learning and modern AI.

@@ -4,7 +4,7 @@ A hands-on course that takes you from your first line of Python to building, eva
 
 Most Python tutorials teach the language in general. Most ML tutorials assume you already know Python well and jump straight into libraries. This repo sits in between. Every topic is taught with machine learning in mind: classes are explained by building a dataset loader, generators by streaming data in batches, and floats by looking at why your loss sometimes turns into `nan`.
 
-The course is planned in three parts. **Part 1**, available now, teaches Python, data and machine learning foundations together and ends with a capstone that goes from raw field data to a tested prediction API. **Part 2** goes deeper into machine learning itself, and **Part 3** into deep learning and modern AI, including how large language models work and how to build with them.
+The course is planned in three parts. **Part 1** teaches Python, data and machine learning foundations together and ends with a capstone that goes from raw field data to a tested prediction API. **Part 2**, now under way, goes deeper into machine learning itself, and **Part 3** into deep learning and modern AI, including how large language models work and how to build with them.
 
 New to AI? Start with [Start Here](00-start-here), a short introduction to what AI and machine learning actually are, with programs you can run in your browser.
 
@@ -63,7 +63,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 
 | #  | Module | Topics | Status |
 |----|--------|--------|--------|
-| 12 | Supervised Learning in Depth | Linear and logistic models, L1 and L2 regularisation, bias and variance, feature engineering, regression metrics, learning curves | Planned |
+| 12 | [Supervised Learning in Depth](12-supervised-learning) | Linear and logistic models, L1 and L2 regularisation, bias and variance, feature engineering, regression metrics, learning curves | Available |
 | 13 | Evaluating Classifiers | Precision, recall, F1, ROC and precision-recall curves, thresholds, calibration, class imbalance, cost-sensitive decisions | Planned |
 | 14 | Trees and Ensembles | Decision trees and gradient boosting from scratch, random forests, XGBoost and LightGBM, feature importance and SHAP | Planned |
 | 15 | Unsupervised Learning | k-means, hierarchical clustering, DBSCAN, PCA from scratch, t-SNE and UMAP, anomaly detection | Planned |
@@ -95,6 +95,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [09 Math in Code](09-math-in-code) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/09-math-in-code/04_mini_project.ipynb) Logistic regression by hand |
 | [10 Engineering Practices](10-engineering-practices) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/04_mini_project.ipynb) From notebook to project |
 | [11 Capstone](11-capstone) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/04_capstone.ipynb) Penguin sexing service, raw data to API |
+| [12 Supervised Learning](12-supervised-learning) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/04_mini_project.ipynb) California house values |
 
 ## How long it takes
 
@@ -178,6 +179,9 @@ python-for-ai-ml/
 ├── 11-capstone/
 │   ├── (same layout, with 04_capstone.ipynb)
 │   └── data/penguins_raw.csv
+├── 12-supervised-learning/
+│   ├── (same layout)
+│   └── data/california_housing.csv
 ├── CONTRIBUTING.md
 ├── requirements.txt
 └── LICENSE
@@ -185,7 +189,11 @@ python-for-ai-ml/
 
 ## Data
 
-The penguin data used throughout the course comes from the Palmer Station Long Term Ecological Research Program, collected by Dr. Kristen Gorman, and packaged as [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/) by Allison Horst, Alison Hill and Kristen Gorman. It's public domain (CC0). Details and citations are in [05-files-and-data/data](05-files-and-data/data/README.md) and [11-capstone/data](11-capstone/data/README.md).
+All datasets are free and openly available, and each data folder has a README with its source and licence.
+
+- **Palmer penguins** (Modules 5 to 11): collected by Dr. Kristen Gorman and the Palmer Station Long Term Ecological Research Program, packaged as [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/) by Allison Horst, Alison Hill and Kristen Gorman. Public domain (CC0). Details in [05-files-and-data/data](05-files-and-data/data/README.md) and [11-capstone/data](11-capstone/data/README.md).
+- **California housing** (Module 12): built from the 1990 US Census by Kelley Pace and Ronald Barry (1997), distributed through StatLib. Details in [12-supervised-learning/data](12-supervised-learning/data/README.md).
+- Small datasets bundled with scikit-learn (diabetes, breast cancer) are used in some lessons.
 
 ## License
 
