@@ -64,7 +64,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | #  | Module | Topics | Status |
 |----|--------|--------|--------|
 | 12 | [Supervised Learning in Depth](12-supervised-learning) | Linear and logistic models, L1 and L2 regularisation, bias and variance, feature engineering, regression metrics, learning curves | Available |
-| 13 | Evaluating Classifiers | Precision, recall, F1, ROC and precision-recall curves, thresholds, calibration, class imbalance, cost-sensitive decisions | Planned |
+| 13 | [Evaluating Classifiers](13-evaluating-classifiers) | Precision, recall, F1, ROC and precision-recall curves, thresholds, calibration, class imbalance, cost-sensitive decisions | Available |
 | 14 | Trees and Ensembles | Decision trees and gradient boosting from scratch, random forests, XGBoost and LightGBM, feature importance and SHAP | Planned |
 | 15 | Unsupervised Learning | k-means, hierarchical clustering, DBSCAN, PCA from scratch, t-SNE and UMAP, anomaly detection | Planned |
 | 16 | Time Series and Recommendations | Forecasting, time-based validation, lag features, collaborative filtering, matrix factorisation | Planned |
@@ -96,6 +96,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [10 Engineering Practices](10-engineering-practices) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/10-engineering-practices/04_mini_project.ipynb) From notebook to project |
 | [11 Capstone](11-capstone) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/11-capstone/04_capstone.ipynb) Penguin sexing service, raw data to API |
 | [12 Supervised Learning](12-supervised-learning) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/04_mini_project.ipynb) California house values |
+| [13 Evaluating Classifiers](13-evaluating-classifiers) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/04_mini_project.ipynb) Who should the bank call? |
 
 ## How long it takes
 
@@ -182,6 +183,9 @@ python-for-ai-ml/
 ├── 12-supervised-learning/
 │   ├── (same layout)
 │   └── data/california_housing.csv
+├── 13-evaluating-classifiers/
+│   ├── (same layout)
+│   └── data/bank_marketing.csv.gz
 ├── CONTRIBUTING.md
 ├── requirements.txt
 └── LICENSE
@@ -193,6 +197,7 @@ All datasets are free and openly available, and each data folder has a README wi
 
 - **Palmer penguins** (Modules 5 to 11): collected by Dr. Kristen Gorman and the Palmer Station Long Term Ecological Research Program, packaged as [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/) by Allison Horst, Alison Hill and Kristen Gorman. Public domain (CC0). Details in [05-files-and-data/data](05-files-and-data/data/README.md) and [11-capstone/data](11-capstone/data/README.md).
 - **California housing** (Module 12): built from the 1990 US Census by Kelley Pace and Ronald Barry (1997), distributed through StatLib. Details in [12-supervised-learning/data](12-supervised-learning/data/README.md).
+- **Bank marketing** (Module 13): calls from a Portuguese bank's campaigns, 2008 to 2010, by Sérgio Moro, Paulo Rita and Paulo Cortez (2014), from the UCI Machine Learning Repository. CC BY 4.0. Details in [13-evaluating-classifiers/data](13-evaluating-classifiers/data/README.md).
 - Small datasets bundled with scikit-learn (diabetes, breast cancer) are used in some lessons.
 
 ## License

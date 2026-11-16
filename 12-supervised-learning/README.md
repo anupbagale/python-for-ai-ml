@@ -64,4 +64,4 @@ Modules [1](../01-python-foundations) to [11](../11-capstone). Modules 6 (NumPy)
 
 ## Next
 
-Module 13: Evaluating Classifiers (planned)
+[Module 13: Evaluating Classifiers](../13-evaluating-classifiers)

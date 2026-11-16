@@ -28,7 +28,7 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Test set.** Data held back until the very end, used once, for an honest estimate of performance on new data. [1, 9, 11]
 
-**Data leakage.** Information from the test data, or from the future, sneaking into training, so evaluation looks better than real performance will be. [2, 7, 11]
+**Data leakage.** Information from the test data, or from the future, sneaking into training, so evaluation looks better than real performance will be. [2, 7, 11, 13]
 
 **Feature engineering.** Turning raw data into useful model inputs. [7, 11]
 
@@ -36,7 +36,7 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Standardisation.** Rescaling a feature to mean 0 and standard deviation 1, using statistics from the training data. [1, 6, 9]
 
-**Drift.** The data a deployed model sees changing over time, away from what it was trained on. [11]
+**Drift.** The data a deployed model sees changing over time, away from what it was trained on. [11, 13]
 
 ## Kinds of learning
 
@@ -82,7 +82,9 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Generalisation.** How well a model performs on new data it hasn't seen. [0]
 
-**Regularisation.** Anything that discourages a model from overfitting, such as penalising large weights. [4, 6, 11]
+**Regularisation.** Anything that discourages a model from overfitting, such as penalising large weights (ridge and lasso). [4, 6, 11, 12]
+
+**Bias and variance.** The two ways a model's predictions go wrong: bias is being wrong the same way every time (too simple), variance is being wrong differently for each training set (too flexible). [12]
 
 **Baseline.** The simplest reasonable prediction (such as always predicting the most common class), which any real model must beat. [6, 11]
 
@@ -126,19 +128,31 @@ The terms used throughout the course, in plain language. The module where each o
 
 ## Evaluation
 
-**Accuracy.** The fraction of predictions that are correct. [1]
+**Accuracy.** The fraction of predictions that are correct. Misleading when one class is rare. [1, 13]
 
-**Precision.** Of the cases predicted positive, the fraction that really are. [1, 2, 5]
+**Precision.** Of the cases predicted positive, the fraction that really are. [1, 2, 5, 13]
 
-**Recall.** Of the cases that really are positive, the fraction the model found. [1, 2, 5]
+**Recall.** Of the cases that really are positive, the fraction the model found. Also called sensitivity. [1, 2, 5, 13]
 
-**Confusion matrix.** A table of predicted classes against true classes. [8, 11]
+**F1 score.** The harmonic mean of precision and recall, so it's only high when both are. [13]
+
+**Base rate.** How common the positive class is. Every classification metric needs to be read next to it. [13]
+
+**Confusion matrix.** A table of predicted classes against true classes: true and false positives and negatives. [8, 11, 13]
+
+**Threshold.** The score above which a classifier predicts positive. 0.5 is a default, not a rule; the right value depends on what mistakes cost. [13]
+
+**ROC curve, AUC.** The true positive rate against the false positive rate for every threshold. The area under it (AUC) is the chance that a random positive scores higher than a random negative. [13]
+
+**Precision-recall curve.** Precision against recall for every threshold. More informative than the ROC curve when positives are rare. [13]
 
 **Cross-validation.** Splitting data into k folds and testing on each in turn, to use every example for evaluation once. [11]
 
 **Confidence interval.** A range that expresses the uncertainty of an estimate, such as a test accuracy. [9]
 
-**Calibration.** Whether predicted probabilities match how often things actually happen. [8, 9]
+**Calibration.** Whether predicted probabilities match how often things actually happen. [8, 9, 13]
+
+**Class imbalance.** When one class is much rarer than another, as in fraud or disease detection. [13]
 
 ## Engineering
 
