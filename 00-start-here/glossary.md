@@ -46,9 +46,15 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Regression.** Supervised learning where the answer is a number. [1, 9]
 
-**Unsupervised learning.** Finding structure (groups, directions, outliers) in data without labels. [0]
+**Unsupervised learning.** Finding structure (groups, directions, outliers) in data without labels. [0, 15]
 
-**Clustering.** Grouping similar examples together, for example with k-means. [0]
+**Clustering.** Grouping similar examples together, for example with k-means. [0, 15]
+
+**Dimensionality reduction.** Describing data with fewer numbers while keeping as much of its structure as possible. **PCA** (principal component analysis) finds the directions of greatest variation; t-SNE and UMAP make 2D maps that keep neighbours together. [15]
+
+**Anomaly detection.** Finding examples that don't fit the pattern of the rest, such as fraud or faulty readings. [15]
+
+**Silhouette.** A score from -1 to 1 for how well each point sits in its own cluster compared with the nearest other cluster. [15]
 
 **Reinforcement learning (RL).** An agent learning which actions earn rewards, by trial and error. [0]
 

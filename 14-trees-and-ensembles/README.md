@@ -66,4 +66,4 @@ Modules [1](../01-python-foundations) to [13](../13-evaluating-classifiers). Mod
 
 ## Next
 
-Module 15: Unsupervised Learning (planned)
+[Module 15: Unsupervised Learning](../15-unsupervised-learning)

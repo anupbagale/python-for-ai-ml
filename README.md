@@ -66,7 +66,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | 12 | [Supervised Learning in Depth](12-supervised-learning) | Linear and logistic models, L1 and L2 regularisation, bias and variance, feature engineering, regression metrics, learning curves | Available |
 | 13 | [Evaluating Classifiers](13-evaluating-classifiers) | Precision, recall, F1, ROC and precision-recall curves, thresholds, calibration, class imbalance, cost-sensitive decisions | Available |
 | 14 | [Trees and Ensembles](14-trees-and-ensembles) | Decision trees and gradient boosting from scratch, bagging and random forests, histogram boosting and the XGBoost and LightGBM family, permutation importance and partial dependence | Available |
-| 15 | Unsupervised Learning | k-means, hierarchical clustering, DBSCAN, PCA from scratch, t-SNE and UMAP, anomaly detection | Planned |
+| 15 | [Unsupervised Learning](15-unsupervised-learning) | k-means and PCA from scratch, Gaussian mixtures, hierarchical clustering, DBSCAN, t-SNE (and UMAP), anomaly detection, checking whether clusters are real | Available |
 | 16 | Time Series and Recommendations | Forecasting, time-based validation, lag features, collaborative filtering, matrix factorisation | Planned |
 
 ### Part 3: Deep learning and modern AI
@@ -98,6 +98,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [12 Supervised Learning](12-supervised-learning) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/12-supervised-learning/04_mini_project.ipynb) California house values |
 | [13 Evaluating Classifiers](13-evaluating-classifiers) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/04_mini_project.ipynb) Who should the bank call? |
 | [14 Trees and Ensembles](14-trees-and-ensembles) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/04_mini_project.ipynb) The rematch: trees vs linear |
+| [15 Unsupervised Learning](15-unsupervised-learning) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/04_mini_project.ipynb) Customer groups for a wholesaler |
 
 ## How long it takes
 
@@ -189,6 +190,9 @@ python-for-ai-ml/
 │   └── data/bank_marketing.csv.gz
 ├── 14-trees-and-ensembles/
 │   └── (same layout)
+├── 15-unsupervised-learning/
+│   ├── (same layout)
+│   └── data/wholesale_customers.csv
 ├── CONTRIBUTING.md
 ├── requirements.txt
 └── LICENSE
@@ -201,6 +205,7 @@ All datasets are free and openly available, and each data folder has a README wi
 - **Palmer penguins** (Modules 5 to 11): collected by Dr. Kristen Gorman and the Palmer Station Long Term Ecological Research Program, packaged as [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/) by Allison Horst, Alison Hill and Kristen Gorman. Public domain (CC0). Details in [05-files-and-data/data](05-files-and-data/data/README.md) and [11-capstone/data](11-capstone/data/README.md).
 - **California housing** (Modules 12 and 14): built from the 1990 US Census by Kelley Pace and Ronald Barry (1997), distributed through StatLib. Details in [12-supervised-learning/data](12-supervised-learning/data/README.md).
 - **Bank marketing** (Module 13): calls from a Portuguese bank's campaigns, 2008 to 2010, by Sérgio Moro, Paulo Rita and Paulo Cortez (2014), from the UCI Machine Learning Repository. CC BY 4.0. Details in [13-evaluating-classifiers/data](13-evaluating-classifiers/data/README.md).
+- **Wholesale customers** (Module 15): annual spending of 440 customers of a Portuguese wholesale distributor, by Margarida Cardoso (2013), from the UCI Machine Learning Repository. CC BY 4.0. Details in [15-unsupervised-learning/data](15-unsupervised-learning/data/README.md).
 - Small datasets bundled with scikit-learn (diabetes, breast cancer) are used in some lessons.
 
 ## License
