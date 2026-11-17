@@ -76,7 +76,7 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Backpropagation.** Computing the gradient of the loss for every parameter of a network with the chain rule, working backwards from the output. [3, 9]
 
-**Overfitting.** Fitting the training data so closely, noise included, that performance on new data gets worse. [0, 8]
+**Overfitting.** Fitting the training data so closely, noise included, that performance on new data gets worse. [0, 8, 12, 14]
 
 **Underfitting.** A model too simple to capture the real pattern. [0, 8]
 
@@ -100,7 +100,11 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Neural network.** Layers of simple units (neurons), each a weighted sum followed by a non-linear function. [3, 6]
 
-**Decision tree, random forest, gradient boosting.** Models built from yes/no questions about features; forests average many trees, boosting builds them one after another. [11]
+**Decision tree, random forest, gradient boosting.** Models built from yes/no questions about features; forests average many trees, boosting builds them one after another. [11, 14]
+
+**Bagging.** Training many models on bootstrap samples of the data and averaging them, which reduces variance. The examples a model didn't see are its **out-of-bag** examples, a free validation set. [14]
+
+**Ensemble.** A model that combines the predictions of many models, such as a random forest or a boosted model. [14]
 
 **Transformer.** The neural network architecture behind modern language models, built around attention. [0]
 
@@ -149,6 +153,10 @@ The terms used throughout the course, in plain language. The module where each o
 **Cross-validation.** Splitting data into k folds and testing on each in turn, to use every example for evaluation once. [11]
 
 **Confidence interval.** A range that expresses the uncertainty of an estimate, such as a test accuracy. [9]
+
+**Feature importance.** How much a model relies on each feature. Permutation importance, measured on held-out data, is the reliable kind. [14]
+
+**Partial dependence.** A model's average prediction as one feature varies, showing the shape of its effect. [14]
 
 **Calibration.** Whether predicted probabilities match how often things actually happen. [8, 9, 13]
 

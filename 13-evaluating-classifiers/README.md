@@ -65,4 +65,4 @@ Modules [1](../01-python-foundations) to [12](../12-supervised-learning). Module
 
 ## Next
 
-Module 14: Trees and Ensembles (planned)
+[Module 14: Trees and Ensembles](../14-trees-and-ensembles)
