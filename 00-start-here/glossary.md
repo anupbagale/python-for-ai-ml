@@ -56,6 +56,22 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Silhouette.** A score from -1 to 1 for how well each point sits in its own cluster compared with the nearest other cluster. [15]
 
+**Time series.** Measurements taken in order over time, such as daily sales. The order matters and neighbouring values depend on each other. [16]
+
+**Seasonality.** A pattern that repeats with a fixed period: every day, week or year. [16]
+
+**Autocorrelation.** The correlation between a series and a delayed copy of itself; the reason the past helps predict the future. [16]
+
+**Lag feature.** A feature holding an earlier value of the series, such as yesterday's sales, used to forecast the next value. [16]
+
+**Recommender system.** A model that predicts which items (products, films, songs) a person will want, usually from what many people liked or bought. [16]
+
+**Collaborative filtering.** Recommending from the behaviour of many users: people who agreed in the past will probably agree in the future. [16]
+
+**Matrix factorisation.** Describing each user and item with a short list of learnt numbers (factors), so that a rating is predicted by combining the two lists. [16]
+
+**Cold start.** The problem of recommending to a new user, or recommending a new item, with no history to learn from. [16]
+
 **Reinforcement learning (RL).** An agent learning which actions earn rewards, by trial and error. [0]
 
 **Self-supervised learning.** Learning from data that labels itself, such as predicting the next word of a text. The main way LLMs are pretrained. [0]

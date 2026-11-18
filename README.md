@@ -4,7 +4,7 @@ A hands-on course that takes you from your first line of Python to building, eva
 
 Most Python tutorials teach the language in general. Most ML tutorials assume you already know Python well and jump straight into libraries. This repo sits in between. Every topic is taught with machine learning in mind: classes are explained by building a dataset loader, generators by streaming data in batches, and floats by looking at why your loss sometimes turns into `nan`.
 
-The course is planned in three parts. **Part 1** teaches Python, data and machine learning foundations together and ends with a capstone that goes from raw field data to a tested prediction API. **Part 2**, now under way, goes deeper into machine learning itself, and **Part 3** into deep learning and modern AI, including how large language models work and how to build with them.
+The course is planned in three parts. **Part 1** teaches Python, data and machine learning foundations together and ends with a capstone that goes from raw field data to a tested prediction API. **Part 2**, now complete, goes deeper into machine learning itself, and **Part 3** will cover deep learning and modern AI, including how large language models work and how to build with them.
 
 New to AI? Start with [Start Here](00-start-here), a short introduction to what AI and machine learning actually are, with programs you can run in your browser.
 
@@ -67,7 +67,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | 13 | [Evaluating Classifiers](13-evaluating-classifiers) | Precision, recall, F1, ROC and precision-recall curves, thresholds, calibration, class imbalance, cost-sensitive decisions | Available |
 | 14 | [Trees and Ensembles](14-trees-and-ensembles) | Decision trees and gradient boosting from scratch, bagging and random forests, histogram boosting and the XGBoost and LightGBM family, permutation importance and partial dependence | Available |
 | 15 | [Unsupervised Learning](15-unsupervised-learning) | k-means and PCA from scratch, Gaussian mixtures, hierarchical clustering, DBSCAN, t-SNE (and UMAP), anomaly detection, checking whether clusters are real | Available |
-| 16 | Time Series and Recommendations | Forecasting, time-based validation, lag features, collaborative filtering, matrix factorisation | Planned |
+| 16 | [Time Series and Recommendations](16-time-series-and-recommendations) | Forecasting baselines, exponential smoothing, time-based validation, lag features, prediction intervals, collaborative filtering, matrix factorisation, evaluating recommenders | Available |
 
 ### Part 3: Deep learning and modern AI
 
@@ -99,10 +99,11 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [13 Evaluating Classifiers](13-evaluating-classifiers) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/13-evaluating-classifiers/04_mini_project.ipynb) Who should the bank call? |
 | [14 Trees and Ensembles](14-trees-and-ensembles) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/04_mini_project.ipynb) The rematch: trees vs linear |
 | [15 Unsupervised Learning](15-unsupervised-learning) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/04_mini_project.ipynb) Customer groups for a wholesaler |
+| [16 Time Series and Recommendations](16-time-series-and-recommendations) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/04_mini_project.ipynb) Bike demand and shop recommendations |
 
 ## How long it takes
 
-Roughly 6 to 10 hours per module, including the exercises and the project, and about 1 hour for Start Here. At 5 to 8 hours a week, Part 1 takes two to three months. There's no deadline: go at the pace that works for you, and repeat anything that didn't stick.
+Roughly 6 to 10 hours per module, including the exercises and the project, and about 1 hour for Start Here. At 5 to 8 hours a week, Part 1 takes two to three months, and Part 2 about another one to two. There's no deadline: go at the pace that works for you, and repeat anything that didn't stick.
 
 A module a week works well for most people:
 
@@ -193,6 +194,9 @@ python-for-ai-ml/
 ├── 15-unsupervised-learning/
 │   ├── (same layout)
 │   └── data/wholesale_customers.csv
+├── 16-time-series-and-recommendations/
+│   ├── (same layout)
+│   └── data/ (bike rentals, online shop transactions)
 ├── CONTRIBUTING.md
 ├── requirements.txt
 └── LICENSE
@@ -206,6 +210,8 @@ All datasets are free and openly available, and each data folder has a README wi
 - **California housing** (Modules 12 and 14): built from the 1990 US Census by Kelley Pace and Ronald Barry (1997), distributed through StatLib. Details in [12-supervised-learning/data](12-supervised-learning/data/README.md).
 - **Bank marketing** (Module 13): calls from a Portuguese bank's campaigns, 2008 to 2010, by Sérgio Moro, Paulo Rita and Paulo Cortez (2014), from the UCI Machine Learning Repository. CC BY 4.0. Details in [13-evaluating-classifiers/data](13-evaluating-classifiers/data/README.md).
 - **Wholesale customers** (Module 15): annual spending of 440 customers of a Portuguese wholesale distributor, by Margarida Cardoso (2013), from the UCI Machine Learning Repository. CC BY 4.0. Details in [15-unsupervised-learning/data](15-unsupervised-learning/data/README.md).
+- **Bike sharing** (Module 16): daily and hourly rentals from Capital Bikeshare, Washington, D.C., 2011 and 2012, by Hadi Fanaee-T (2013), from the UCI Machine Learning Repository. CC BY 4.0.
+- **Online retail** (Module 16): a year of transactions from a UK online shop, by Daqing Chen (2015), from the UCI Machine Learning Repository. CC BY 4.0. Details for both in [16-time-series-and-recommendations/data](16-time-series-and-recommendations/data/README.md).
 - Small datasets bundled with scikit-learn (diabetes, breast cancer) are used in some lessons.
 
 ## License

@@ -62,4 +62,4 @@ Modules [1](../01-python-foundations) to [14](../14-trees-and-ensembles). Module
 
 ## Next
 
-Module 16: Time Series and Recommendations (planned)
+[Module 16: Time Series and Recommendations](../16-time-series-and-recommendations)
