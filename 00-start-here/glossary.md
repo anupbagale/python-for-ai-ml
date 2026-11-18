@@ -92,19 +92,19 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Learning rate.** The size of each gradient descent step. Too small is slow; too big diverges. [1, 9]
 
-**Epoch.** One pass through the whole training set. [4]
+**Epoch.** One pass through the whole training set. [4, 17]
 
-**Batch, mini-batch.** A subset of training examples processed together in one step. [3, 4]
+**Batch, mini-batch.** A subset of training examples processed together in one step. [3, 4, 17]
 
-**Backpropagation.** Computing the gradient of the loss for every parameter of a network with the chain rule, working backwards from the output. [3, 9]
+**Backpropagation.** Computing the gradient of the loss for every parameter of a network with the chain rule, working backwards from the output. [3, 9, 17]
 
-**Overfitting.** Fitting the training data so closely, noise included, that performance on new data gets worse. [0, 8, 12, 14]
+**Overfitting.** Fitting the training data so closely, noise included, that performance on new data gets worse. [0, 8, 12, 14, 17]
 
 **Underfitting.** A model too simple to capture the real pattern. [0, 8]
 
 **Generalisation.** How well a model performs on new data it hasn't seen. [0]
 
-**Regularisation.** Anything that discourages a model from overfitting, such as penalising large weights (ridge and lasso). [4, 6, 11, 12]
+**Regularisation.** Anything that discourages a model from overfitting, such as penalising large weights (ridge and lasso). [4, 6, 11, 12, 17]
 
 **Bias and variance.** The two ways a model's predictions go wrong: bias is being wrong the same way every time (too simple), variance is being wrong differently for each training set (too flexible). [12]
 
@@ -120,7 +120,7 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Logistic regression.** A linear model passed through a sigmoid to give a probability, for classification. [6, 9, 10, 11]
 
-**Neural network.** Layers of simple units (neurons), each a weighted sum followed by a non-linear function. [3, 6]
+**Neural network.** Layers of simple units (neurons), each a weighted sum followed by a non-linear function. [3, 6, 17]
 
 **Decision tree, random forest, gradient boosting.** Models built from yes/no questions about features; forests average many trees, boosting builds them one after another. [11, 14]
 
@@ -131,6 +131,40 @@ The terms used throughout the course, in plain language. The module where each o
 **Transformer.** The neural network architecture behind modern language models, built around attention. [0]
 
 **Attention.** A mechanism that lets each position in a sequence draw information from every other position, weighted by relevance. [0]
+
+## Deep learning
+
+**Tensor.** PyTorch's array: like a NumPy array, but it can live on a GPU and record operations for autograd. [17]
+
+**Autograd.** Automatic differentiation: the framework records the operations that produce the loss and computes every gradient from that record. [3, 9, 17]
+
+**Activation function.** The non-linear function applied after each layer's weighted sum, such as ReLU, `max(0, x)`. Without it, a deep network would be one linear model. [6, 17]
+
+**Logits.** A classifier's raw scores, one per class, before softmax turns them into probabilities. [17]
+
+**Softmax.** Turns a vector of scores into probabilities that are positive and add up to 1. [9, 17]
+
+**Cross-entropy.** The standard loss for classification: minus the log of the probability given to the true class. [9, 17]
+
+**Optimiser.** The rule that turns gradients into weight updates: SGD, SGD with momentum, Adam, AdamW. [17]
+
+**Momentum.** Keeping a running sum of recent gradients and stepping along it, which speeds up consistent directions and damps zig-zagging. [17]
+
+**Adam, AdamW.** Optimisers that scale each weight's step by the size of its recent gradients. AdamW applies weight decay directly to the weights. [17]
+
+**Weight decay.** Shrinking every weight a little at each step; the neural network version of ridge regularisation. [17]
+
+**Dropout.** Switching off a random fraction of units at each training step, so the network can't rely on any one of them. Off during evaluation. [17]
+
+**Initialisation.** The random starting weights. Too small or too large and the signal dies or explodes in a deep network; Kaiming initialisation suits ReLU networks. [17]
+
+**Batch normalisation.** Rescaling each feature to mean 0 and variance 1 within a batch, then letting the network learn a new scale and shift. Helps deep networks train. [17]
+
+**Learning-rate schedule.** Changing the learning rate during training, often a warmup followed by a slow decay (cosine or one-cycle). [17]
+
+**Early stopping.** Keeping the weights from the epoch with the best validation loss, instead of the last epoch. [17]
+
+**GPU.** A graphics processor: thousands of simple cores that do the matrix arithmetic of neural networks much faster than a CPU. [17]
 
 ## Language models
 

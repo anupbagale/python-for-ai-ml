@@ -73,4 +73,4 @@ Modules [1](../01-python-foundations) to [15](../15-unsupervised-learning). Modu
 
 ## Next
 
-This completes Part 2. Part 3 starts with Module 17: Deep Learning with PyTorch (planned).
+This completes Part 2. Part 3 starts with [Module 17: Deep Learning with PyTorch](../17-deep-learning-pytorch).

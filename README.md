@@ -4,7 +4,7 @@ A hands-on course that takes you from your first line of Python to building, eva
 
 Most Python tutorials teach the language in general. Most ML tutorials assume you already know Python well and jump straight into libraries. This repo sits in between. Every topic is taught with machine learning in mind: classes are explained by building a dataset loader, generators by streaming data in batches, and floats by looking at why your loss sometimes turns into `nan`.
 
-The course is planned in three parts. **Part 1** teaches Python, data and machine learning foundations together and ends with a capstone that goes from raw field data to a tested prediction API. **Part 2**, now complete, goes deeper into machine learning itself, and **Part 3** will cover deep learning and modern AI, including how large language models work and how to build with them.
+The course is planned in three parts. **Part 1** teaches Python, data and machine learning foundations together and ends with a capstone that goes from raw field data to a tested prediction API. **Part 2**, now complete, goes deeper into machine learning itself, and **Part 3**, now under way, covers deep learning and modern AI, including how large language models work and how to build with them.
 
 New to AI? Start with [Start Here](00-start-here), a short introduction to what AI and machine learning actually are, with programs you can run in your browser.
 
@@ -73,7 +73,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 
 | #  | Module | Topics | Status |
 |----|--------|--------|--------|
-| 17 | Deep Learning with PyTorch | Tensors, autograd, `nn.Module`, optimisers, initialisation, normalisation, dropout, learning-rate schedules, GPUs, debugging training | Planned |
+| 17 | [Deep Learning with PyTorch](17-deep-learning-pytorch) | Tensors, autograd, `nn.Module`, optimisers, initialisation, normalisation, dropout, learning-rate schedules, GPUs, debugging training | Available |
 | 18 | Computer Vision | Convolutions from scratch, CNNs, data augmentation, transfer learning with pretrained models | Planned |
 | 19 | Sequences and Transformers | Tokenisation, embeddings, attention from scratch, training a small GPT | Planned |
 | 20 | LLMs in Practice | Pretrained models, prompting, embeddings and vector search, retrieval-augmented generation, fine-tuning with LoRA, evaluating LLM applications | Planned |
@@ -100,6 +100,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [14 Trees and Ensembles](14-trees-and-ensembles) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/14-trees-and-ensembles/04_mini_project.ipynb) The rematch: trees vs linear |
 | [15 Unsupervised Learning](15-unsupervised-learning) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/15-unsupervised-learning/04_mini_project.ipynb) Customer groups for a wholesaler |
 | [16 Time Series and Recommendations](16-time-series-and-recommendations) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/04_mini_project.ipynb) Bike demand and shop recommendations |
+| [17 Deep Learning with PyTorch](17-deep-learning-pytorch) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/17-deep-learning-pytorch/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/17-deep-learning-pytorch/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/17-deep-learning-pytorch/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/17-deep-learning-pytorch/04_mini_project.ipynb) Clothing classifier |
 
 ## How long it takes
 
@@ -197,6 +198,9 @@ python-for-ai-ml/
 ├── 16-time-series-and-recommendations/
 │   ├── (same layout)
 │   └── data/ (bike rentals, online shop transactions)
+├── 17-deep-learning-pytorch/
+│   ├── (same layout)
+│   └── data/README.md (Fashion-MNIST is downloaded when you run the mini project)
 ├── CONTRIBUTING.md
 ├── requirements.txt
 └── LICENSE
@@ -212,7 +216,8 @@ All datasets are free and openly available, and each data folder has a README wi
 - **Wholesale customers** (Module 15): annual spending of 440 customers of a Portuguese wholesale distributor, by Margarida Cardoso (2013), from the UCI Machine Learning Repository. CC BY 4.0. Details in [15-unsupervised-learning/data](15-unsupervised-learning/data/README.md).
 - **Bike sharing** (Module 16): daily and hourly rentals from Capital Bikeshare, Washington, D.C., 2011 and 2012, by Hadi Fanaee-T (2013), from the UCI Machine Learning Repository. CC BY 4.0.
 - **Online retail** (Module 16): a year of transactions from a UK online shop, by Daqing Chen (2015), from the UCI Machine Learning Repository. CC BY 4.0. Details for both in [16-time-series-and-recommendations/data](16-time-series-and-recommendations/data/README.md).
-- Small datasets bundled with scikit-learn (diabetes, breast cancer) are used in some lessons.
+- **Fashion-MNIST** (Module 17): 70,000 small photos of clothing from Zalando's catalogue, by Han Xiao, Kashif Rasul and Roland Vollgraf (2017). MIT licence. Downloaded from the [official repository](https://github.com/zalandoresearch/fashion-mnist) when the mini project runs. Details in [17-deep-learning-pytorch/data](17-deep-learning-pytorch/data/README.md).
+- Small datasets bundled with scikit-learn (diabetes, breast cancer, handwritten digits) are used in some lessons.
 
 ## License
 
