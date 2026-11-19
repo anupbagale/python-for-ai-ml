@@ -66,4 +66,4 @@ Modules [1](../01-python-foundations) to [16](../16-time-series-and-recommendati
 
 ## Next
 
-Module 18: Computer Vision (planned).
+[Module 18: Computer Vision](../18-computer-vision).

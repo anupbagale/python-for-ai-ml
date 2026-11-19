@@ -1,7 +1,7 @@
 # Only needed if you run the notebooks locally. Colab already has most of these,
 # and the Module 11 notebooks install FastAPI, httpx and uvicorn themselves if they're missing.
 # Module 1 uses pure Python, so it only needs Jupyter.
-# From Module 17, PyTorch is needed. On a computer without an NVIDIA graphics card, the smaller
+# From Module 17, PyTorch is needed (and from Module 18, torchvision and scikit-image). On a computer without an NVIDIA graphics card, the smaller
 # CPU-only build is enough: see https://pytorch.org/get-started/locally/ for the right command.
 jupyter
 numpy
@@ -14,3 +14,5 @@ fastapi
 httpx
 uvicorn
 torch
+torchvision
+scikit-image

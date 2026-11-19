@@ -166,6 +166,26 @@ The terms used throughout the course, in plain language. The module where each o
 
 **GPU.** A graphics processor: thousands of simple cores that do the matrix arithmetic of neural networks much faster than a CPU. [17]
 
+**Convolution.** Sliding a small grid of weights (a kernel or filter) across an image and taking a weighted sum at each position. The basis of convolutional neural networks (CNNs). [18]
+
+**Kernel (filter).** The small grid of weights in a convolution. A CNN learns its kernels; classic hand-made ones blur, sharpen or find edges. [18]
+
+**Feature map.** The output of one kernel over the whole image: high where the image matches the pattern the kernel looks for. [18]
+
+**Padding and stride.** Padding adds a border of zeros so the output keeps its size; stride is how far the kernel moves at each step. [18]
+
+**Pooling.** Shrinking a feature map by summarising small blocks, usually with their maximum. [18]
+
+**Receptive field.** The patch of the input image that can affect one unit of a layer. It grows with depth, pooling and strides. [18]
+
+**Data augmentation.** Making new training examples by changing existing ones in ways that keep the answer, such as flips, crops and shifts. [18]
+
+**Residual connection.** Adding a block's input to its output, so the block only has to learn a correction. Made very deep networks such as ResNet trainable. [18]
+
+**Pretrained model.** A network already trained on a large dataset, such as ImageNet's 1.3 million photos, that you can use or adapt. [18]
+
+**Transfer learning.** Reusing a pretrained network for a new task, either as a fixed feature extractor or by fine-tuning some of its layers. [18]
+
 ## Language models
 
 **Token.** A unit of text a language model reads and writes: a word or a piece of a word. [0]
@@ -176,7 +196,7 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Pretraining.** The first, largest stage of training an LLM: next-token prediction on huge amounts of text. [0]
 
-**Fine-tuning.** Further training of a pretrained model on a smaller, specific dataset. [0]
+**Fine-tuning.** Further training of a pretrained model on a smaller, specific dataset, usually with a small learning rate. [0, 18]
 
 **RLHF.** Reinforcement learning from human feedback: tuning a model towards responses people prefer. [0]
 
