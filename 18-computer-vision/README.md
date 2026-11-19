@@ -64,4 +64,4 @@ Modules [1](../01-python-foundations) to [17](../17-deep-learning-pytorch). Modu
 
 ## Next
 
-Module 19: Sequences and Transformers (planned).
+[Module 19: Sequences and Transformers](../19-sequences-and-transformers).

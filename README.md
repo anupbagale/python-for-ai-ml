@@ -75,7 +75,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 |----|--------|--------|--------|
 | 17 | [Deep Learning with PyTorch](17-deep-learning-pytorch) | Tensors, autograd, `nn.Module`, optimisers, initialisation, normalisation, dropout, learning-rate schedules, GPUs, debugging training | Available |
 | 18 | [Computer Vision](18-computer-vision) | Convolutions from scratch, CNNs, data augmentation, transfer learning with pretrained models | Available |
-| 19 | Sequences and Transformers | Tokenisation, embeddings, attention from scratch, training a small GPT | Planned |
+| 19 | [Sequences and Transformers](19-sequences-and-transformers) | Tokenisation, embeddings, attention from scratch, training a small GPT | Available |
 | 20 | LLMs in Practice | Pretrained models, prompting, embeddings and vector search, retrieval-augmented generation, fine-tuning with LoRA, evaluating LLM applications | Planned |
 | 21 | Responsible and Production AI | Fairness, interpretability, privacy, experiment tracking, containers, monitoring, and a final capstone | Planned |
 
@@ -102,6 +102,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [16 Time Series and Recommendations](16-time-series-and-recommendations) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/16-time-series-and-recommendations/04_mini_project.ipynb) Bike demand and shop recommendations |
 | [17 Deep Learning with PyTorch](17-deep-learning-pytorch) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/17-deep-learning-pytorch/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/17-deep-learning-pytorch/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/17-deep-learning-pytorch/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/17-deep-learning-pytorch/04_mini_project.ipynb) Clothing classifier |
 | [18 Computer Vision](18-computer-vision) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/18-computer-vision/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/18-computer-vision/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/18-computer-vision/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/18-computer-vision/04_mini_project.ipynb) Recycling sorter |
+| [19 Sequences and Transformers](19-sequences-and-transformers) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/19-sequences-and-transformers/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/19-sequences-and-transformers/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/19-sequences-and-transformers/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/19-sequences-and-transformers/04_mini_project.ipynb) A transformer that adds |
 
 ## How long it takes
 
@@ -205,6 +206,9 @@ python-for-ai-ml/
 ├── 18-computer-vision/
 │   ├── (same layout)
 │   └── data/README.md (TrashNet photos are downloaded when you run the mini project)
+├── 19-sequences-and-transformers/
+│   ├── (same layout)
+│   └── data/ (Tiny Shakespeare)
 ├── CONTRIBUTING.md
 ├── requirements.txt
 └── LICENSE
@@ -222,6 +226,7 @@ All datasets are free and openly available, and each data folder has a README wi
 - **Online retail** (Module 16): a year of transactions from a UK online shop, by Daqing Chen (2015), from the UCI Machine Learning Repository. CC BY 4.0. Details for both in [16-time-series-and-recommendations/data](16-time-series-and-recommendations/data/README.md).
 - **Fashion-MNIST** (Module 17): 70,000 small photos of clothing from Zalando's catalogue, by Han Xiao, Kashif Rasul and Roland Vollgraf (2017). MIT licence. Downloaded from the [official repository](https://github.com/zalandoresearch/fashion-mnist) when the mini project runs. Details in [17-deep-learning-pytorch/data](17-deep-learning-pytorch/data/README.md).
 - **TrashNet** (Module 18): 2,527 photos of rubbish in six recycling classes, by Gary Thung and Mindy Yang (Stanford, 2016). MIT licence. Downloaded from the [official repository](https://github.com/garythung/trashnet) when the mini project runs. Module 18 also uses ResNet-18 weights pretrained on ImageNet, downloaded by torchvision, and sample photos bundled with scikit-image. Details in [18-computer-vision/data](18-computer-vision/data/README.md).
+- **Tiny Shakespeare** (Module 19): about 40,000 lines of Shakespeare's plays in one text file, collected by Andrej Karpathy for [char-rnn](https://github.com/karpathy/char-rnn) (MIT licence; the plays are in the public domain). Details in [19-sequences-and-transformers/data](19-sequences-and-transformers/data/README.md).
 - Small datasets bundled with scikit-learn (diabetes, breast cancer, handwritten digits) are used in some lessons.
 
 ## License

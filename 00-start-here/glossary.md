@@ -128,9 +128,9 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Ensemble.** A model that combines the predictions of many models, such as a random forest or a boosted model. [14]
 
-**Transformer.** The neural network architecture behind modern language models, built around attention. [0]
+**Transformer.** The neural network architecture behind modern language models, built around attention. [0, 19]
 
-**Attention.** A mechanism that lets each position in a sequence draw information from every other position, weighted by relevance. [0]
+**Attention.** A mechanism that lets each position in a sequence draw information from every other position, weighted by relevance. [0, 19]
 
 ## Deep learning
 
@@ -188,11 +188,31 @@ The terms used throughout the course, in plain language. The module where each o
 
 ## Language models
 
-**Token.** A unit of text a language model reads and writes: a word or a piece of a word. [0]
+**Token.** A unit of text a language model reads and writes: a word or a piece of a word. [0, 19]
 
-**Context window.** How many tokens a language model can take into account at once. [0]
+**Tokenisation.** Splitting text into tokens and giving each a number. [19]
 
-**Temperature.** A setting that controls how random a model's sampling is. Low is predictable, high is varied. [0]
+**Byte-pair encoding (BPE).** A way of learning subword tokens by repeatedly merging the most frequent pair of neighbouring tokens. [19]
+
+**Language model.** A model that gives probabilities for the next token. Generating text means sampling one token at a time. [19]
+
+**Perplexity.** `exp(cross-entropy)` of a language model on unseen text: roughly how many tokens it is choosing between. Lower is better. [19]
+
+**Query, key, value.** The three vectors each position computes in attention: what it looks for, what it contains, and what it passes on. [19]
+
+**Causal mask.** The mask that stops each position attending to later positions, so a model can't see the future. [19]
+
+**Multi-head attention.** Several attentions run side by side on slices of the vector, each free to look for something different. [19]
+
+**Position embedding.** A vector added to each token's embedding to tell the model where it is in the sequence. [19]
+
+**Layer normalisation.** Rescaling each position's vector to mean 0 and standard deviation 1, then applying a learnt scale and shift. [19]
+
+**GPT.** "Generative pretrained transformer": a stack of transformer blocks with a causal mask, trained to predict the next token. [19]
+
+**Context window.** How many tokens a language model can take into account at once. [0, 19]
+
+**Temperature.** A setting that controls how random a model's sampling is. Low is predictable, high is varied. [0, 19]
 
 **Pretraining.** The first, largest stage of training an LLM: next-token prediction on huge amounts of text. [0]
 
@@ -202,7 +222,7 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Hallucination.** A model stating something false fluently, because it produces likely text rather than verified text. [0]
 
-**Embedding.** A vector of numbers representing a word, sentence or item, arranged so that similar things have similar vectors. [2, 9]
+**Embedding.** A vector of numbers representing a word, sentence or item, arranged so that similar things have similar vectors. [2, 9, 19]
 
 **RAG (retrieval-augmented generation).** Searching documents for relevant passages and giving them to a language model as context. [0]
 
