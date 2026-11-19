@@ -24,3 +24,8 @@ Thumbs.db
 *.ckpt
 *.h5
 data/raw/
+**/data/fashion_mnist/
+**/data/trashnet/
+
+# Scratch output created when running the notebooks locally
+work/
