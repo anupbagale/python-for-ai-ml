@@ -114,7 +114,7 @@ At 5 to 8 hours a week:
 
 | Part | Modules | Time |
 |------|---------|------|
-| Part 1: Foundations | 1 to 11 | 2 to 5 months |
+| Part 1: Python, data and ML foundations | 1 to 11 | 2 to 5 months |
 | Part 2: Machine learning in depth | 12 to 16 | 1 to 3 months |
 | Part 3: Deep learning and modern AI | 17 to 21 | 1 to 3 months |
 | **Whole course** | | **about 4 months to a year** |
