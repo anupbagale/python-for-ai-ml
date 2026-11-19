@@ -62,4 +62,4 @@ Modules [1](../01-python-foundations) to [18](../18-computer-vision). Module 17 
 
 ## Next
 
-Module 20: LLMs in Practice (planned).
+[Module 20: LLMs in Practice](../20-llms-in-practice).

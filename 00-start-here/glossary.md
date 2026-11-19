@@ -216,15 +216,37 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Pretraining.** The first, largest stage of training an LLM: next-token prediction on huge amounts of text. [0]
 
-**Fine-tuning.** Further training of a pretrained model on a smaller, specific dataset, usually with a small learning rate. [0, 18]
+**Fine-tuning.** Further training of a pretrained model on a smaller, specific dataset, usually with a small learning rate. [0, 18, 20]
+
+**LoRA (low-rank adaptation).** Fine-tuning that freezes a model's weights and learns a small low-rank correction `B A` for some weight matrices, so only a tiny fraction of the parameters train. [20]
+
+**Instruct model.** A pretrained language model further trained to follow instructions and hold a conversation, as opposed to a base model, which only continues text. [20]
+
+**Chat template.** The exact text format, with special tokens, in which a chat model expects a conversation. [20]
+
+**Prompt engineering.** Writing and testing the instructions, examples and format given to a language model. [20]
+
+**Few-shot prompting.** Showing a model a few worked examples in the prompt before the real request. [20]
+
+**Vector search.** Finding the stored vectors (usually embeddings) most similar to a query vector. [16, 20]
+
+**Chunking.** Splitting documents into pieces small enough to embed, retrieve and fit into a prompt. [20]
+
+**BM25.** A classic keyword-ranking formula that weights rare words more and limits the effect of repeats and long documents. [20]
+
+**Hybrid search.** Combining keyword and embedding search, for example by adding up reciprocal ranks. [20]
+
+**Prompt injection.** Instructions hidden in text a model reads (a web page, an email, a document) that try to override the instructions it was given. [20]
+
+**Quantisation.** Storing a model's weights with fewer bits (8 or 4 instead of 16 or 32) to save memory, at a small cost in quality. [20]
 
 **RLHF.** Reinforcement learning from human feedback: tuning a model towards responses people prefer. [0]
 
-**Hallucination.** A model stating something false fluently, because it produces likely text rather than verified text. [0]
+**Hallucination.** A model stating something false fluently, because it produces likely text rather than verified text. [0, 20]
 
-**Embedding.** A vector of numbers representing a word, sentence or item, arranged so that similar things have similar vectors. [2, 9, 19]
+**Embedding.** A vector of numbers representing a word, sentence or item, arranged so that similar things have similar vectors. [2, 9, 19, 20]
 
-**RAG (retrieval-augmented generation).** Searching documents for relevant passages and giving them to a language model as context. [0]
+**RAG (retrieval-augmented generation).** Searching documents for relevant passages and giving them to a language model as context. [0, 20]
 
 ## Evaluation
 
