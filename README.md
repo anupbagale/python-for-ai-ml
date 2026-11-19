@@ -108,14 +108,25 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 
 ## How long it takes
 
-Roughly 6 to 10 hours per module, including the exercises and the project, and about 1 hour for Start Here. At 5 to 8 hours a week, Part 1 takes two to three months, and Parts 2 and 3 about another one to two months each. There's no deadline: go at the pace that works for you, and repeat anything that didn't stick.
+About 1 hour for Start Here, then roughly 6 to 10 hours per module in Part 1 and 8 to 12 hours per module in Parts 2 and 3, including the exercises and the project. In total, that's about 150 to 230 hours.
 
-A module a week works well for most people:
+At 5 to 8 hours a week:
 
-1. **Day 1 to 2:** read the lesson and run every cell, changing things as you go.
-2. **Day 3 to 4:** the exercises, without looking at the solutions.
-3. **Day 5:** compare with the solutions and read the notes.
-4. **Day 6 to 7:** the mini project and at least one of its extension ideas.
+| Part | Modules | Time |
+|------|---------|------|
+| Part 1: Foundations | 1 to 11 | 2 to 5 months |
+| Part 2: Machine learning in depth | 12 to 16 | 1 to 3 months |
+| Part 3: Deep learning and modern AI | 17 to 21 | 1 to 3 months |
+| **Whole course** | | **about 4 months to a year** |
+
+There's no deadline: go at the pace that works for you, and repeat anything that didn't stick. Going slowly and doing every exercise beats rushing through.
+
+With about 8 hours a week, a module a week works well. With less time, take two weeks per module and keep the same steps:
+
+1. **Lesson:** read it and run every cell, changing things as you go.
+2. **Exercises:** do them without looking at the solutions.
+3. **Solutions:** compare with your answers and read the notes.
+4. **Mini project:** build it, and try at least one of its extension ideas.
 
 ## How to use this repo
 
