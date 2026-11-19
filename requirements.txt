@@ -9,6 +9,7 @@ pandas
 matplotlib
 seaborn
 scikit-learn
+scipy
 pytest
 fastapi
 httpx

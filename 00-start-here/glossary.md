@@ -36,7 +36,7 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Standardisation.** Rescaling a feature to mean 0 and standard deviation 1, using statistics from the training data. [1, 6, 9]
 
-**Drift.** The data a deployed model sees changing over time, away from what it was trained on. [11, 13]
+**Drift.** The data a deployed model sees changing over time, away from what it was trained on. [11, 13, 21]
 
 ## Kinds of learning
 
@@ -272,7 +272,7 @@ The terms used throughout the course, in plain language. The module where each o
 
 **Confidence interval.** A range that expresses the uncertainty of an estimate, such as a test accuracy. [9]
 
-**Feature importance.** How much a model relies on each feature. Permutation importance, measured on held-out data, is the reliable kind. [14]
+**Feature importance.** How much a model relies on each feature. Permutation importance, measured on held-out data, is the reliable kind. [14, 21]
 
 **Partial dependence.** A model's average prediction as one feature varies, showing the shape of its effect. [14]
 
@@ -286,6 +286,46 @@ The terms used throughout the course, in plain language. The module where each o
 
 **API.** An interface other software uses to send requests, such as data to predict on, and get responses. [11]
 
-**Model card.** A short document describing what a model does, how it was evaluated, and its limitations. [11]
+**Model card.** A short document describing what a model does, how it was evaluated, its intended uses and its limitations, including how it performs for different groups. [11, 21]
 
 **Reproducibility.** Being able to get the same result again from the same code, data and settings. [10]
+
+**Experiment tracking.** Recording every training run's settings, metrics, data fingerprint and library versions, so any result can be traced and repeated. Tools include MLflow and Weights & Biases. [21]
+
+**Container.** A packaged image holding code, a model and exact library versions, which runs the same on any computer. Docker is the most common tool; the recipe is a `Dockerfile`. [21]
+
+**Training/serving skew.** A model receiving inputs in production that were prepared differently from its training data, often because the preparation code was written twice. [21]
+
+**Monitoring.** Watching a deployed model's inputs and predictions all the time, and its performance whenever the true outcomes arrive. [21]
+
+**Population stability index (PSI).** A measure of how far a column's distribution in production has moved from its distribution in training. Above 0.25 is usually treated as a significant shift. [21]
+
+**Recalibration.** Adjusting a model's probabilities to match current outcome rates without changing how it ranks examples. [21]
+
+## Responsible AI
+
+**Fairness metric.** A way of comparing a model's behaviour across groups of people. Different metrics answer different questions and usually can't all be satisfied at once. [21]
+
+**Demographic parity.** Groups receive the positive prediction equally often. [21]
+
+**Equal opportunity.** Groups have equal true positive rates: people who really are positive are recognised equally often. [21]
+
+**Equalised odds.** Groups have equal true positive rates and equal false positive rates. [21]
+
+**Predictive parity.** A positive prediction is equally often correct (equal precision) in every group. [21]
+
+**Disparate impact ratio.** A group's selection rate divided by a reference group's. Values below 0.8 are a common warning sign. [21]
+
+**Proxy.** A feature that carries information about another one, such as a sensitive attribute, so leaving that attribute out doesn't remove its influence. [21]
+
+**Reweighing.** Giving training examples weights so that group membership and outcome become independent in the weighted data. [21]
+
+**Shapley value.** A feature's average contribution to one prediction, over every order in which features could be added. The values add up to the prediction minus the average prediction. SHAP is the best-known library. [21]
+
+**Quasi-identifier.** An ordinary fact, such as age or postcode, that can single out a person when combined with others. [21]
+
+**k-anonymity.** The property that every combination of quasi-identifiers in a dataset is shared by at least k records. [21]
+
+**Differential privacy.** Adding carefully calibrated random noise to results, so they'd be almost the same whether or not any one person's data was included. Epsilon, the privacy budget, sets how much noise. [21]
+
+**Membership inference.** Guessing from a model's outputs whether a particular person's record was in its training data. Overfitted models are the most exposed. [21]

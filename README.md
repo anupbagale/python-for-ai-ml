@@ -4,7 +4,7 @@ A hands-on course that takes you from your first line of Python to building, eva
 
 Most Python tutorials teach the language in general. Most ML tutorials assume you already know Python well and jump straight into libraries. This repo sits in between. Every topic is taught with machine learning in mind: classes are explained by building a dataset loader, generators by streaming data in batches, and floats by looking at why your loss sometimes turns into `nan`.
 
-The course is planned in three parts. **Part 1** teaches Python, data and machine learning foundations together and ends with a capstone that goes from raw field data to a tested prediction API. **Part 2**, now complete, goes deeper into machine learning itself, and **Part 3**, now under way, covers deep learning and modern AI, including how large language models work and how to build with them.
+The course has three parts, all complete. **Part 1** teaches Python, data and machine learning foundations together and ends with a capstone that goes from raw field data to a tested prediction API. **Part 2** goes deeper into machine learning itself. **Part 3** covers deep learning and modern AI, including how large language models work and how to build with them, and ends with responsible AI and a final capstone that takes a model all the way into a monitored production service.
 
 New to AI? Start with [Start Here](00-start-here), a short introduction to what AI and machine learning actually are, with programs you can run in your browser.
 
@@ -27,7 +27,7 @@ This course is free, and it will stay free. The goal is simple: anyone, anywhere
   - **Binder**: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anupbagale/python-for-ai-ml/HEAD) opens the whole course in a browser with **no account at all**. It can take a few minutes to start.
   - **Your own computer**: any ordinary laptop works (see [Running locally](#running-locally)), and once installed it works offline.
   - **Just reading**: every notebook is saved with its outputs, so you can read it on GitHub with the results and charts already shown.
-- **No expensive hardware.** Part 1 runs on a basic laptop or free Colab, with small datasets and no graphics card. Parts 2 and 3 will be designed the same way: free Colab is enough, with open datasets and open models, and **never a paid API key**.
+- **No expensive hardware.** Part 1 runs on a basic laptop or free Colab, with small datasets and no graphics card. Parts 2 and 3 are designed the same way: free Colab is enough, with open datasets and open models, and **never a paid API key**.
 - **No background assumed.** No maths beyond school arithmetic is needed to start; the maths is taught in code when it's needed. Plain English throughout, with a [glossary](00-start-here/glossary.md) for every term.
 - **Charts are readable by everyone.** Colours are chosen to stay distinguishable with colour blindness, groups also differ by marker shape, and every chart is explained in the text.
 
@@ -77,7 +77,7 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | 18 | [Computer Vision](18-computer-vision) | Convolutions from scratch, CNNs, data augmentation, transfer learning with pretrained models | Available |
 | 19 | [Sequences and Transformers](19-sequences-and-transformers) | Tokenisation, embeddings, attention from scratch, training a small GPT | Available |
 | 20 | [LLMs in Practice](20-llms-in-practice) | Pretrained models, prompting, embeddings and vector search, retrieval-augmented generation, fine-tuning with LoRA, evaluating LLM applications | Available |
-| 21 | Responsible and Production AI | Fairness, interpretability, privacy, experiment tracking, containers, monitoring, and a final capstone | Planned |
+| 21 | [Responsible and Production AI](21-responsible-and-production-ai) | Fairness, interpretability, privacy, experiment tracking, model cards, serving and containers, monitoring, and the final capstone | Available |
 
 ## Notebooks
 
@@ -104,10 +104,11 @@ No prior ML knowledge is needed. The math is introduced when it's needed and kep
 | [18 Computer Vision](18-computer-vision) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/18-computer-vision/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/18-computer-vision/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/18-computer-vision/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/18-computer-vision/04_mini_project.ipynb) Recycling sorter |
 | [19 Sequences and Transformers](19-sequences-and-transformers) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/19-sequences-and-transformers/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/19-sequences-and-transformers/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/19-sequences-and-transformers/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/19-sequences-and-transformers/04_mini_project.ipynb) A transformer that adds |
 | [20 LLMs in Practice](20-llms-in-practice) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/20-llms-in-practice/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/20-llms-in-practice/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/20-llms-in-practice/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/20-llms-in-practice/04_mini_project.ipynb) Ask the Course |
+| [21 Responsible and Production AI](21-responsible-and-production-ai) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/21-responsible-and-production-ai/01_lesson.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/21-responsible-and-production-ai/02_exercises.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/21-responsible-and-production-ai/03_solutions.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anupbagale/python-for-ai-ml/blob/main/21-responsible-and-production-ai/04_mini_project.ipynb) Final capstone: From Notebook to Service |
 
 ## How long it takes
 
-Roughly 6 to 10 hours per module, including the exercises and the project, and about 1 hour for Start Here. At 5 to 8 hours a week, Part 1 takes two to three months, and Part 2 about another one to two. There's no deadline: go at the pace that works for you, and repeat anything that didn't stick.
+Roughly 6 to 10 hours per module, including the exercises and the project, and about 1 hour for Start Here. At 5 to 8 hours a week, Part 1 takes two to three months, and Parts 2 and 3 about another one to two months each. There's no deadline: go at the pace that works for you, and repeat anything that didn't stick.
 
 A module a week works well for most people:
 
@@ -213,6 +214,9 @@ python-for-ai-ml/
 ├── 20-llms-in-practice/
 │   ├── (same layout)
 │   └── data/ (a made-up library handbook)
+├── 21-responsible-and-production-ai/
+│   ├── (same layout, with the final capstone as 04_mini_project.ipynb)
+│   └── data/adult.csv.gz
 ├── CONTRIBUTING.md
 ├── requirements.txt
 └── LICENSE
@@ -232,6 +236,7 @@ All datasets are free and openly available, and each data folder has a README wi
 - **TrashNet** (Module 18): 2,527 photos of rubbish in six recycling classes, by Gary Thung and Mindy Yang (Stanford, 2016). MIT licence. Downloaded from the [official repository](https://github.com/garythung/trashnet) when the mini project runs. Module 18 also uses ResNet-18 weights pretrained on ImageNet, downloaded by torchvision, and sample photos bundled with scikit-image. Details in [18-computer-vision/data](18-computer-vision/data/README.md).
 - **Tiny Shakespeare** (Module 19): about 40,000 lines of Shakespeare's plays in one text file, collected by Andrej Karpathy for [char-rnn](https://github.com/karpathy/char-rnn) (MIT licence; the plays are in the public domain). Details in [19-sequences-and-transformers/data](19-sequences-and-transformers/data/README.md).
 - **Models for Module 20**: SmolLM2-135M-Instruct, SmolLM2-360M-Instruct and all-MiniLM-L6-v2, all Apache 2.0, downloaded from the Hugging Face Hub when the notebooks run. The library handbook used there is invented for the course. Details in [20-llms-in-practice/data](20-llms-in-practice/data/README.md).
+- **Adult census income** (Module 21): 32,561 records from the 1994 United States census, by Barry Becker and Ronny Kohavi (1996), from the UCI Machine Learning Repository. CC BY 4.0. The final capstone reuses the bank marketing data from Module 13. Details in [21-responsible-and-production-ai/data](21-responsible-and-production-ai/data/README.md).
 - Small datasets bundled with scikit-learn (diabetes, breast cancer, handwritten digits) are used in some lessons.
 
 ## License

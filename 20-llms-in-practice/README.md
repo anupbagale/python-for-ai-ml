@@ -66,4 +66,4 @@ Modules [1](../01-python-foundations) to [19](../19-sequences-and-transformers).
 
 ## Next
 
-Module 21: Responsible and Production AI (planned).
+[Module 21: Responsible and Production AI](../21-responsible-and-production-ai)
