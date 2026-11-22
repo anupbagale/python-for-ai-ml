@@ -11,10 +11,6 @@
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="Contributions welcome"></a>
 </p>
 
-<p align="center">
-  <b>⭐ If this course helps you, please star the repo. It helps other learners find it.</b>
-</p>
-
 # Python for AI & ML Engineering
 
 A hands-on course that takes you from your first line of Python to building, evaluating and deploying machine learning systems.
